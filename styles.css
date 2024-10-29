@@ -1,0 +1,35 @@
+/* Main container that contains the cards */
+#game-board{
+    background-color: darkolivegreen;
+    width: 50vw;
+    height: 90vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#deck-zone{
+    background-color: transparent;
+    width: fit-content;
+    padding: 10px;
+    border: 7px solid rgb(199, 187, 187);
+    border-radius: 10px;
+
+}
+#player-hand, #dealer-hand{
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 15px 0;
+    margin: 15px 0;
+}
+
+/* card image */
+.card{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+}
+
