@@ -56,7 +56,13 @@ function printDeck(){
     deckZoneEl.appendChild(cardImgEl_ARR[0]);
 }
 
-function dealCardToDealer(){
+function dealCardToDealer(numCard){
+    const dealerHandEl = document.getElementById('dealer-cards');
+    for (let i=0; i<numCard; i++){
+        let topCard = cardImgEl_ARR.shift(); // Remove the top card
+        dealerHandEl.appendChild(topCard); // Add it to dealers's hand
+        cardImgEl_DiscardARR.push(topCard); // Push the card to discard array   
+    }
 
 }
 
@@ -80,6 +86,8 @@ window.onload = function() {
     createImgEl();
     shuffle();
     dealCardToPlayer(2);
+    dealCardToDealer(2);
+
 
     const deal_btn = document.getElementById('hit-button').addEventListener('click', ()=>{
         dealCardToPlayer(1);

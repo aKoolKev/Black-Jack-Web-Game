@@ -12,19 +12,28 @@
     <!-- Main container -->
     <!-- <div id="deck-zone"></div> -->
     
-    <h1 class="text-center">Kevin's Blackjack Game!</h1>
+    <!-- TITLE -->
+    <h1 class="text-center mt-5">Kevin's Blackjack Game!</h1>
 
-    <div id="game-board">
-        <div id="dealer-hand">Dealer's Hand
+    <!-- GAMEBOARD -->
+    <div id="game-board" class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto text-center d-flex flex-column justify-content-between">
+
+        <!-- ROW 1 -->
+        <div class="row mx-0 my-3" id="dealer-hand">
+            <h3>Dealer's Hand</h3>
             <div id="dealer-cards"></div>
         </div>
 
-        <div id="player-hand">Player's Hand
+        <!-- ROW 2 -->
+        <div class="row mx-0 my-3" id="player-hand">
+            <h3>Player's Hand</h3>
             <div id="player-cards"></div>
+
             <div id="player-actions">
-                <button id="hit-button">Hit</button>
-                <button id="stay-button">Stay</button>
+                <button class="btn bg-white" id="hit-button">Hit</button>
+                <button class="btn bg-white" id="stay-button">Stay</button>
             </div>
+
         </div>
         
         
