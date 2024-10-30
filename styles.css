@@ -26,3 +26,9 @@
     display: inline-block;
 }
 
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .card{
+        width: 75px;
+    }
+}
