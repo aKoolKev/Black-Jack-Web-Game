@@ -26,9 +26,25 @@
     display: inline-block;
 }
 
+.btn{
+    background-color: rgb(78, 74, 74);
+    height: fit-content;
+    padding: 3px 10px;
+    color: white;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 500px;
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Slow transition */
+}
+.btn:hover{
+    background-color: white;
+    transform: scale(1.1);
+    
+}
+
 /* Mobile Devices */
 @media (max-width: 480px) {
     .card{
-        width: 75px;
+        width: 15%;
     }
 }
