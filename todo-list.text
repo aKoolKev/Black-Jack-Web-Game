@@ -1,0 +1,13 @@
+TODO
+☐ Prevent card counting (use 4 decks)
+☐ Style "hit" and "stay" button with icons
+☐ Code the dealer "ai"
+☐ Code main game loop
+☐ Score counter
+☐ End of round 
+
+
+IN-PROGRESS
+☐ Single facedown card on dealer hand
+☐ Handle running out of cards in playing deck
+
