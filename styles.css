@@ -18,6 +18,11 @@
     margin: 15px 0; */
 }
 
+.horizontal-scroll{
+    overflow-x: auto;        /* Enables horizontal scrolling */
+    white-space: nowrap;     /* Prevents wrapping */
+}
+
 /* card image */
 .card{
     width: 100px;

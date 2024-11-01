@@ -95,7 +95,8 @@ function dealCardToDealer(numCard){
     const dealerHandEl = document.getElementById('dealer-cards');
     for (let i=0; i<numCard; i++){
         let topCard = cardObj_ARR.shift(); // Remove the top card
-        dealerHandEl.appendChild(topCard._img); // Add it to dealers's hand
+        dealerHandEl.insertBefore(topCard._img, dealerHandEl.firstChild); // Insert before the first child
+        // dealerHandEl.appendChild(topCard._img); // Add it to dealers's hand
         dealerHand.push(topCard);
         cardObjDiscard_ARR.push(topCard); // Push the card to discard array   
     }
@@ -107,7 +108,8 @@ function dealCardToPlayer(numCard){
     const playerHandEl = document.getElementById('player-cards');
     for (let i=0; i<numCard; i++){
         let topCard = cardObj_ARR.shift(); // Remove the top card
-        playerHandEl.appendChild(topCard._img); // Add it to player's hand
+        playerHandEl.insertBefore(topCard._img, playerHandEl.firstChild); // Insert before the first child
+        // playerHandEl.appendChild(topCard._img); // Add it to player's hand
         playerHand.push(topCard);
         cardObjDiscard_ARR.push(topCard); // Push the card to discard array   
     }
