@@ -50,6 +50,6 @@
 /* Mobile Devices */
 @media (max-width: 480px) {
     .card{
-        width: 15%;
+        width: 20%;
     }
 }
